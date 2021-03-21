@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% set pageId ="page-search-results" %}
+
+
+{% block title %}
+<title>Resultado da pesquisa</title>
+
+{% endblock title %}
+
+
+
+{% block styles %}
+<link rel="stylesheet" href="/styles/search-results.css">
+
+
+{% endblock styles %}
+
+
+
+{% block content %}
+{% include "partials/page-header.html" %}
+<main>
+  <h4>
+    <strong>2 pontos </strong>encontrados
+  </h4>
+
+  <div class="cards">
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1528323273322-d81458248d40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=801&q=80"
+        alt="Colectoria">
+      <h1>Colectoria</h1>
+      <h3>Residuos Eletronicos, Lâmpadas</h3>
+      <p>
+        Rio do Sul, Santa catarina <br />
+        Guilherme Gemballa, Jardim América<br />
+        n° 260
+      </p>
+    </div>
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+        alt="paperside">
+      <h1>Paperside</h1>
+      <h3>Residuos Eletronicos, Lâmpadas</h3>
+      <p>
+        Rio do Sul, Santa catarina <br />
+        Guilherme Gemballa, Jardim América<br />
+        n° 260
+      </p>
+    </div>
+  </div>
+</main>
+
+{% endblock content %}
